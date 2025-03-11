@@ -15,7 +15,8 @@
     <td>{{ $item->product->partno }}</td>
     <td>{{ $item->product->madein }}</td>
     <td><input type="number" value="{{ $item->qty }}" id="qty{{ $item->id }}" onfocusout="qty({{ $item->id }})"></td>
-    <td><input type="number" value="{{ round($item->price,0) }}" id="rate{{ $item->id }}" onfocusout="rate({{ $item->id }})"></td>
+    <td><input type="number" value="{{ round($item->price,0) }}" id="rate{{ $item->id }}" onfocusout="rate({{ $item->id }})">
+        <br>{{ $item->product->pprice }}</td>
     <td>{{ $amount }}</td>
     <td><button class="btn btn-danger" onclick="deleteDraft({{ $item->id }})">Delete</button></td>
 </tr>

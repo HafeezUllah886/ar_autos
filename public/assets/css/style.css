@@ -57,7 +57,7 @@ html {
   background: #eff3f6;
 }
 .th-color{
-  background: linear-gradient(to bottom, #5aafcb 0%, #114d89 100%) !important;
+  background: linear-gradient(to bottom,  #c61e05 0%, #4f0101 100%) !important;
   color: white;
   font-weight: bold;
 }
@@ -71,7 +71,7 @@ html {
   border-style: none;
   width: 114%;
   height: 14%;
-  margin: -43px;
+  margin: -20px;
   margin-left: -12px;
 }
 .nav-link{

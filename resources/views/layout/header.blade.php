@@ -92,7 +92,7 @@
 
         <!-- Loader -->
         <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
-        <nav style="background: linear-gradient(to bottom, #5aafcb 0%, #114d89 100%) !important" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav style="background: linear-gradient(to bottom, #c61e05 0%, #4f0101 100%) !important" class="navbar navbar-expand-lg navbar-light bg-light">
             <a style="width: 17%;" class="navbar-brand" href="#">
             <img class="logo-nav" style="height: 50px !important;" src="{{ asset("assets/images/rlogo.png") }}"/>
             </a>
