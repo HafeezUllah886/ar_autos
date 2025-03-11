@@ -253,7 +253,7 @@
 <body>
 
     <div class="container">
-        <img style="margin:0;width:300px;" src="{{ asset('assets/images/rlogo.png') }}" alt="">
+        <img style="margin:0;width:100%" src="{{ asset('assets/images/bill.png') }}" alt="">
         <div class="body-section">
             <div><h1 style="text-align: center;">Customer Invoice</h1></div>
             <div class="row">

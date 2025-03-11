@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilshad Shoe Company</title>
+    <title>POS</title>
     <style>
 
 
@@ -260,7 +260,7 @@
 <body>
 
     <div class="container">
-        <img style="margin:0;width:100%;" src="{{ asset('assets/images/header.jpg') }}" alt="">
+        <img style="margin:0;width:100%;" src="{{ asset('assets/images/bill.png') }}" alt="">
         <div class="body-section">
             <div class="row">
                 <div class="qoute">
