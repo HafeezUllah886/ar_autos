@@ -9,6 +9,8 @@ use App\Models\purchase_details;
 use App\Models\ref;
 use App\Models\sale;
 use App\Models\sale_details;
+use App\Models\saleReturn;
+use App\Models\saleReturnDetails;
 use App\Models\stock;
 use App\Models\transactions;
 use Carbon\Carbon;
@@ -256,6 +258,7 @@ function updateSaleAmount($id){
 function todaySale(){
     $Date = Carbon::now()->format('Y-m-d');
     $sales = sale_details::whereDate('date', $Date)->get();
+    $returns = saleReturn::whereDate('date', $Date)->sum('amount');
 
     $total = 0;
     foreach($sales as $item)
@@ -263,7 +266,9 @@ function todaySale(){
         $total += $item->qty * $item-> price;
         $total -= $item->bill->discount;
     }
-    return $total;
+
+   
+    return $total - $returns;
 }
 
 function todayPurchase(){
