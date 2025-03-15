@@ -14,6 +14,19 @@
         }
     }
 
+    function price1(){
+
+var id = $('#product').find(":selected").val();
+ $.ajax({
+     method: 'get',
+     url: "{{ url('/sale/getPrice/') }}/"+id,
+     success: function(data){
+        $('#price').val(data.price);
+        $('#rate').val(data.purchase);
+     }
+ });
+}
+
     function walkIn1(){
         console.log(vendor);
         var vendor = $("#vendor").find(':selected').val();
@@ -64,7 +77,7 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label for="product">{{ __('lang.SelectProduct') }}</label>
-                            <select name="product" required id="product" class="select2">
+                            <select name="product" required id="product" onchange="price1()" class="select2">
                                 <option value=""></option>
                                 @foreach ($products as $pro)
                                     <option value="{{ $pro->id }}">{{ $pro->name }} | {{$pro->partno}} | {{$pro->madein}}</option>
